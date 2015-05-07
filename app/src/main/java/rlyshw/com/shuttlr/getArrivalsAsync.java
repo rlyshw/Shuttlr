@@ -41,7 +41,7 @@ public class getArrivalsAsync extends AsyncTask<Void, Void, Boolean> {
         if (result){
             TextView arrivalText = ((TextView)pAct.findViewById(R.id.arrivalText));
             arrivalText.setVisibility(View.VISIBLE);
-            arrivalText.setText("");
+            arrivalText.setText("Arrivals:");
             for(Arrival a : arrivals){
                 arrivalText.setText(arrivalText.getText()+"\n"+a.toString());
             }
